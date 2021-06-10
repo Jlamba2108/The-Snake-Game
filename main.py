@@ -6,8 +6,9 @@ from scoreboard import Scoreboard
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
-screen.title("The Snake Game")
 screen.tracer(0)
+player_name = screen.textinput(title=" ", prompt="Enter Player Name :")
+screen.title(f"The Snake Game- Player: {player_name}")
 game_is_on = True
 snake = Snake()
 food = Food()
